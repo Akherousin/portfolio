@@ -1,0 +1,45 @@
+.blob {
+  --translation-y-degree: 3px;
+
+  animation: var(--translate-animation) 10s infinite ease-in-out;
+}
+
+.rectangle {
+  --rotation-degree: 5deg;
+  --translation-y-degree: 2px;
+
+  transform-box: fill-box;
+
+  animation: 8s infinite alternate ease-in-out;
+  animation-name: var(--rotate-animation), var(--translate-animation);
+}
+
+.heart {
+  --rotation-degree: -8deg;
+
+  transform-box: fill-box;
+  animation: var(--rotate-animation) 4s infinite ease-in-out;
+  transform-origin: center;
+}
+
+.diamond,
+.clover {
+  transform-box: fill-box;
+  animation: var(--scale-animation) 8s infinite ease-in-out;
+  transform-origin: center;
+}
+
+.clover {
+  --scale-degree: 1.2;
+}
+
+.diamond {
+  --scale-degree: 0.8;
+}
+
+.hollow-rectangles,
+.colored-circles {
+  --translation-y-degree: -2px;
+
+  animation: var(--translate-animation) 8s infinite ease-in-out;
+}

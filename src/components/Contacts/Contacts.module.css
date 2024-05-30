@@ -1,0 +1,45 @@
+.content {
+  align-self: normal;
+  display: flex;
+  gap: var(--space-r-6);
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 48rem) {
+    flex-direction: column;
+    gap: var(--space-r-5);
+  }
+}
+
+.content-info {
+  --alignment: start;
+
+  @media screen and (max-width: 48rem) {
+    --alignment: center;
+    text-align: center;
+  }
+}
+
+.character {
+  inline-size: min(100%, 31.25rem);
+}
+
+.links-list {
+  --alignment: start;
+  --space: var(--space-r-3);
+}
+
+.link {
+  display: flex;
+  gap: var(--space-r-2);
+  align-items: center;
+
+  &:before {
+    display: none;
+  }
+}
+
+.link > svg {
+  inline-size: 2rem;
+  block-size: 2rem;
+}

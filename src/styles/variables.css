@@ -1,0 +1,72 @@
+:root {
+  --wrapper-max-inline-size: 71.25rem;
+  --wrapper-max-inline-size-narrow: 56.25rem;
+  --wrapper-max-inline-size-super-narrow: 30rem;
+  --wrapper-padding-inline: 2rem;
+
+  /* ANIMATIONS */
+
+  --rotate-animation: rotate;
+  --scale-animation: scale;
+  --translate-animation: translate;
+
+  /* EASINGS */
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  /* FONT SIZES */
+  --font-size-body: 1.25rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h1: 3rem;
+  --font-size-button: var(--font-size-h3);
+
+  /* FONT WEIGHTS */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* SPACING */
+  --space-unit: 18px;
+
+  --space-1: calc(0.25 * var(--space-unit));
+  --space-2: calc(0.5 * var(--space-unit));
+  --space-3: calc(0.75 * var(--space-unit));
+  --space-4: var(--space-unit);
+  --space-5: calc(1.5 * var(--space-unit));
+  --space-6: calc(2 * var(--space-unit));
+  --space-7: calc(3 * var(--space-unit));
+  --space-8: calc(4 * var(--space-unit));
+  --space-9: calc(6 * var(--space-unit));
+  --space-10: calc(8 * var(--space-unit));
+  --space-11: calc(12 * var(--space-unit));
+  --space-12: calc(16 * var(--space-unit));
+  --space-13: calc(24 * var(--space-unit));
+  --space-14: calc(32 * var(--space-unit));
+  --space-15: calc(40 * var(--space-unit));
+  --space-16: calc(48 * var(--space-unit));
+
+  --space-r-unit: var(--font-size-body, 1.25rem);
+
+  --space-r-1: calc(0.25 * var(--space-r-unit));
+  --space-r-2: calc(0.5 * var(--space-r-unit));
+  --space-r-3: calc(0.75 * var(--space-r-unit));
+  --space-r-4: var(--space-r-unit);
+  --space-r-5: calc(1.5 * var(--space-r-unit));
+  --space-r-5: calc(2 * var(--space-r-unit));
+  --space-r-6: calc(3 * var(--space-r-unit));
+  --space-r-7: calc(4 * var(--space-r-unit));
+  --space-r-8: calc(4 * var(--space-r-unit));
+  --space-r-9: calc(6 * var(--space-r-unit));
+  --space-r-10: calc(8 * var(--space-r-unit));
+  --space-r-11: calc(12 * var(--space-r-unit));
+  --space-r-12: calc(16 * var(--space-r-unit));
+  --space-r-13: calc(24 * var(--space-r-unit));
+  --space-r-14: calc(32 * var(--space-r-unit));
+  --space-r-15: calc(40 * var(--space-r-unit));
+  --space-r-16: calc(48 * var(--space-r-unit));
+
+  --section-padding-block: var(--space-r-7);
+
+  /* COLORS */
+  --color-black: hsl(60, 1%, 20%);
+  --color-black-900: hsl(0, 0%, 7%);
+}

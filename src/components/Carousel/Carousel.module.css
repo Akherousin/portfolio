@@ -1,0 +1,71 @@
+.carousel {
+  position: relative;
+  max-inline-size: 100%;
+
+  /* overflow is set so that the only one slide is visible on transitions*/
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  aspect-ratio: 500/333;
+}
+
+.slides > * {
+  flex-shrink: 0;
+}
+
+.slide img {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.slide-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-r-1);
+  align-items: center;
+}
+
+.controls {
+  padding: var(--space-r-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 -2px 6px #0000000f;
+
+  /* relative position is set so that controls panel sits on top of the image in the stacking order*/
+  position: relative;
+}
+
+.control {
+  --translation-degree: 5px;
+  --animation-duration: 0.3s;
+  --easing: var(--ease-in-out-quad);
+
+  cursor: pointer;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.control:first-of-type:not([aria-disabled]):is(:hover, :focus-visible) > svg {
+  --translation-x-degree: calc(var(--translation-degree) * -1);
+
+  animation: var(--translate-animation) var(--animation-duration) var(--easing);
+}
+
+.control:last-of-type:not([aria-disabled]):is(:hover, :focus-visible) > svg {
+  --translation-x-degree: var(--translation-degree);
+
+  animation: var(--translate-animation) var(--animation-duration) var(--easing);
+}
+
+.control[aria-disabled] {
+  cursor: initial;
+  color: hsl(0, 0%, 78%);
+}

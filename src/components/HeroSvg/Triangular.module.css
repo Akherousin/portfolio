@@ -1,0 +1,70 @@
+@media (prefers-reduced-motion: no-preference) {
+  .body,
+  .left-arm,
+  .right-arm,
+  .left-leg,
+  .right-leg {
+    transform-box: fill-box;
+  }
+
+  .triangular {
+    --easing: ease-in-out;
+    --animation-duration: 6s;
+    --translation-y-degree: 2px;
+    --rotation-degree: -4deg;
+    --limbs-animation-delay: 400ms;
+  }
+
+  .body {
+    animation: var(--translate-animation) var(--animation-duration) infinite
+        var(--easing),
+      var(--rotate-animation) var(--animation-duration) infinite var(--easing);
+    transform-origin: 50% 50%;
+  }
+
+  .right-arm {
+    --rotation-degree: 35deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--limbs-animation-delay);
+    transform-origin: 100% 0%;
+  }
+
+  .left-arm {
+    --rotation-degree: -40deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--limbs-animation-delay);
+    transform-origin: 0% 0%;
+  }
+
+  .right-leg {
+    --rotation-degree: 18deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--limbs-animation-delay);
+    transform-origin: 100% 0%;
+  }
+
+  .left-leg {
+    --rotation-degree: 44deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--limbs-animation-delay);
+    transform-origin: 0% 0%;
+  }
+
+  .face {
+    --translation-y-degree: 3px;
+
+    animation: var(--translate-animation) var(--animation-duration) infinite
+      var(--easing);
+  }
+
+  .brows {
+    --translation-y-degree: -4px;
+
+    animation: var(--translate-animation) var(--animation-duration) infinite
+      var(--easing);
+  }
+}

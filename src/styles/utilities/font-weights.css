@@ -1,0 +1,7 @@
+.font-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}

@@ -1,0 +1,4 @@
+.underline {
+  text-decoration: 2px currentColor wavy underline;
+  text-underline-offset: 0.3em;
+}

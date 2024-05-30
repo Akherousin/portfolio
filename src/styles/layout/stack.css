@@ -1,0 +1,18 @@
+.stack {
+  --space: var(--space-r-4, 1.25rem);
+  --alignment: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: var(--alignment, center);
+  gap: var(--space);
+}
+.stack > * {
+  /* ↓ Any extant vertical margins are removed */
+  margin-block: 0;
+}
+
+.stack[data-stack-type='big'] {
+  --space: var(--space-r-7);
+}

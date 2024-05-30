@@ -1,0 +1,73 @@
+@media (prefers-reduced-motion: no-preference) {
+  .upperbody,
+  .left-arm,
+  .right-arm,
+  .right-leg,
+  .left-leg,
+  .eye-mask {
+    transform-box: fill-box;
+  }
+
+  .flower {
+    --easing: ease-in-out;
+    --animation-duration: 4s;
+    --leg-animation-delay: 400ms;
+  }
+
+  .upperbody {
+    --rotation-degree: -5deg;
+    rotate: 5deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    transform-origin: 50% 50%;
+  }
+
+  .left-arm {
+    --rotation-degree: -20deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    transform-origin: 0% 50%;
+  }
+
+  .right-arm {
+    --rotation-degree: -20deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    transform-origin: 100% 0%;
+  }
+
+  .right-leg {
+    --rotation-degree: -40deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--leg-animation-delay);
+    transform-origin: 100% 0%;
+  }
+
+  .left-leg {
+    --rotation-degree: -37deg;
+    animation: var(--rotate-animation) var(--animation-duration) infinite
+      var(--easing);
+    animation-delay: var(--leg-animation-delay);
+    transform-origin: 50% 0%;
+  }
+
+  .eye-mask {
+    animation: blink 10s infinite var(--easing);
+    animation-delay: 5s;
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes blink {
+  5%,
+  7%,
+  9% {
+    scale: 1;
+  }
+
+  6%,
+  8% {
+    scale: 1 0.05;
+  }
+}

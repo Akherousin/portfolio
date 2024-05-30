@@ -1,0 +1,16 @@
+.wrapper {
+  --max-inline-size: var(--wrapper-max-inline-size);
+
+  box-sizing: content-box;
+  max-inline-size: var(--max-inline-size);
+  margin-inline: auto;
+  padding-inline: var(--wrapper-padding-inline);
+}
+
+.wrapper[data-type='narrow'] {
+  --max-inline-size: var(--wrapper-max-inline-size-narrow);
+}
+
+.wrapper[data-type='super-narrow'] {
+  --max-inline-size: var(--wrapper-max-inline-size-super-narrow);
+}

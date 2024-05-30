@@ -1,0 +1,73 @@
+.me {
+  color: var(--color-black);
+}
+
+[data-mouth='closed'] .closed-mouth,
+[data-mouth='opened'] .opened-mouth {
+  opacity: 1;
+}
+
+[data-mouth='opened'] .closed-mouth,
+[data-mouth='closed'] .opened-mouth {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .face {
+    transform: translate(
+      calc(var(--mouse-x) / 50 * 1%),
+      calc(var(--mouse-y) / 50 * 1%)
+    );
+  }
+
+  .inner-face {
+    transform: translate(
+      calc(var(--mouse-x) / 40 * 1%),
+      calc(var(--mouse-y) / 40 * 1%)
+    );
+  }
+
+  .eye {
+    transform-box: fill-box;
+    transform: translate(
+      calc(var(--mouse-x) / 35 * 1%),
+      calc(var(--mouse-y) / 35 * 1%)
+    );
+    transform-origin: center;
+    animation: blink 10s infinite;
+  }
+
+  .ear {
+    transform: translate(
+      calc((var(--mouse-x) / 700) * -1%),
+      calc((var(--mouse-y) / 40) * -1%)
+    );
+  }
+
+  .hair {
+    transform: translate(
+      calc(var(--mouse-x) / 90 * 1%),
+      calc(var(--mouse-y) / 70 * 1%)
+    );
+  }
+
+  .brow {
+    transform: translate(
+      calc(var(--mouse-x) / 40 * 1%),
+      calc(var(--mouse-y) / 40 * 1%)
+    );
+  }
+}
+
+@keyframes blink {
+  5%,
+  7%,
+  9% {
+    scale: 1;
+  }
+
+  6%,
+  8% {
+    scale: 1 0.05;
+  }
+}
