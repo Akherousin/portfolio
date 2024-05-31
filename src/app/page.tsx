@@ -154,7 +154,7 @@ export default function Home() {
           states, manage their cart, and complete a validated checkout process
           with order summaries. I prioritized accessibility and user experience
           with features like real-time notifications via ARIA live regions."
-              liveLink="https://audiophile-da9blg18v-akherousin.vercel.app/"
+              liveLink="https://audiophile-liard.vercel.app/"
               githubLink="https://github.com/akherousin/audiophile"
               slides={slides.audiophile}
             />
