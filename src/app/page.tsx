@@ -68,7 +68,7 @@ export default function Home() {
 
       <section className="section">
         <div className="wrapper stack" data-stack-type="big">
-          <h2 className="h2 underline" id="about">
+          <h2 className="h2 underline" id="skills">
             Skills
           </h2>
           <ul className={`${styles['skill-list']} | cluster`} role="list">
